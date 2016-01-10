@@ -1,7 +1,7 @@
 describe('PhoneCat App', function() {
 
 	it('should redirect index.html to index.html#/phones', function() {
-		browser.get('app/index.html');
+		browser.get('index.html');
 		browser.getLocationAbsUrl().then(function() {
 			expect(url).toEqual('/phones');
 		})
@@ -9,7 +9,7 @@ describe('PhoneCat App', function() {
 
 	describe('Phone list view', function() {
 		beforeEach(function() {
-			browser.get('app/index.html#/phones');
+			browser.get('index.html#/phones');
 		});
 
 		it('should filter the phone list as a user types into the search box', function() {
